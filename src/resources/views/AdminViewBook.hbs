@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/AdminViewBook.css">
+    <title>Admin view book</title>
+
+</head>
+
+<body>
+    <div id="main">
+
+        <form class="form-search">
+            <div class="select-type">
+                <select id="type">
+                    <option value="A->Z"><i class="fa fa-sort-alpha-asc"></i>A->Z</option>
+                    <option value="Z->A">Z->A</option>
+                </select>
+
+            </div>
+            <input type="text" placeholder="Search by name" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="add-book">
+            <a href=""> New Book</a>
+        </div>
+        <div class="list">
+            
+            <div class="book-block">
+                <img src="/images/a-la-recherche-du-temps-perdu.jpg">
+                <div class="book_information">
+                    <ul>
+                        <li class="information">Book ID: <span class="detail">T0001</span></li>
+                        <li class="information">Title: <span class="detail">Obama</span> </li>
+                        <li class="information">Author: <span class="detail">Obama</span> </li>
+                        <li class="information">Genre: <span class="detail">History</span> </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="book-block">
+                <img src="/images/a-la-recherche-du-temps-perdu.jpg">
+                <div class="book_information">
+                    <ul>
+                        <li class="information">Book ID: <span class="detail">T0001</span></li>
+                        <li class="information">Title: <span class="detail">Obama</span> </li>
+                        <li class="information">Author: <span class="detail">Obama</span> </li>
+                        <li class="information">Genre: <span class="detail">History</span> </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="book-block">
+                <img src="/images/a-la-recherche-du-temps-perdu.jpg">
+                <div class="book_information">
+                    <ul>
+                        <li class="information">Book ID: <span class="detail">T0001</span></li>
+                        <li class="information">Title: <span class="detail">Obama</span> </li>
+                        <li class="information">Author: <span class="detail">Obama</span> </li>
+                        <li class="information">Genre: <span class="detail">History</span> </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        
+
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+                links.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

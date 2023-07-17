@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/AdminViewBookInfor.css">
+    <title>Admin view book information </title>
+
+</head>
+
+<body>
+    <div id="main">
+
+        <div class="book">
+            <div class="book-choose">
+                <img src="/images/a-la-recherche-du-temps-perdu.jpg">
+                <div class="button-remove-book">
+                    <button class="button-remove"><i class="fa fa-remove"></i>remove </button>
+                </div>
+            </div>
+            <div class="book-information">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-light">Title: <span>Life of Napeleon</span></li>
+                    <li class="list-group-item list-group-item-light">Author: <span>Aki Hayakawa</span></li>
+                    <li class="list-group-item list-group-item-light">Publishing House: <span>DoubleDay</span></li>
+                    <li class="list-group-item list-group-item-light">Publishing Year: <span>2012</span></li>
+                    <li class="list-group-item list-group-item-light">Genre: <span>History</span></li>
+                    <li class="list-group-item list-group-item-light">Language: <span>English</span></li>
+                    <li class="list-group-item list-group-item-light">Has left: <span>19</span></li>
+                    <li class="list-group-item list-group-item-light">Place: <span>Department A- Shelf C04</span></li>
+                    <li class="list-group-item list-group-item-light">Price: <span>50000VND</span></li>
+                    <li class="list-group-item list-group-item-light">Routine: <span>3 days</span></li>
+                </ul>
+            </div>
+            <div class="button-UpdateInfor">
+                <button class="button-update"> <i class="fa fa-edit"></i><span class="update">Update</span> </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+
+                links.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/DashboardLibrarian.css">
+    <title>Dashboard librarian</title>
+
+</head>
+
+<body>
+    <div id="main">
+        <form class="form-search">
+            <div class="select-type">
+                <select id="type">
+                    <option value="A->Z">A->Z</option>
+                    <option value="Z->A">Z->A</option>
+                </select>
+
+            </div>
+            <input type="text" placeholder="Search by name" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="table_heading">
+            <div class="table-data">Transaction ID</div>
+            <div class="table-data">Client ID</div>
+            <div class="table-data">Phone number</div>
+            <div class="table-data">Total Price</div>
+            <div class="table-data">Borrow Date</div>
+            <div class="table-data">Return Date</div>
+            <div class="table-data">Quantity</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">C0001</div>
+            <div class="table-data">32132131</div>
+            <div class="table-data">30000 VND</div>
+            <div class="table-data">2/2/1209</div>
+            <div class="table-data">5/4/9839</div>
+            <div class="table-data">1</div>
+        </div>
+    </div>
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+
+                links.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

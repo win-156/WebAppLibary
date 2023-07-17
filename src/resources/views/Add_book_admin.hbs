@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Add_book_admin.css">
+    <title>Add book admin</title>
+</head>
+<body>
+    <div id="main">
+        
+    <form>
+        <div class="form-group">
+            <label for="input-bookname">Name book</label>
+            <input type="text" class="form-control" id="input-bookname" name="bookname" placeholder="Donald Trump">
+        </div>
+
+        <div class="form-group">
+          <label for="input-author">Author</label>
+          <input type="text" class="form-control" id="input-author" name="author" placeholder="Joe Biden">
+        </div>
+
+        <div class="form-group">
+            <label for="input-publishinghouse">Publishing house</label>
+            <input type="text" class="form-control" id="input-publishinghouse" name="publishinghouse" placeholder="Triple boys">
+        </div>
+        <div class="form-group">
+            <label for="input-publishingyear">Publishing year</label>
+            <input type="text" class="form-control" id="input-publishingyear" name="publishingyear" placeholder="4343278">
+        </div>
+        <div class="form-group">
+            <label for="input-hasleft">Has left</label>
+            <input type="text" class="form-control" id="input-hasleft" name="hasleft" placeholder="18">
+        </div>
+        <div class="form-group">
+            <label for="input-price">Price</label>
+            <input type="text" class="form-control" id="input-price" name="price" placeholder="500000VND">
+        </div>
+        <div class="form-group">
+          <label for="input-language">Language</label>
+          <input type="text" class="form-control" id="input-language" name="language" placeholder="english">
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="input-place">Department</label>
+            <select class="place-department">
+              <option value="A">A</option>
+              <option value="B">B</option>
+            </select>
+            <label for="input-place">Shelf</label>
+            <select class="place-shelf">
+              <option value="C003">C003</option>
+              <option value="C002">C001</option>
+              <option value="C004">C004</option>
+            </select>
+            <label for="input-place">row</label>
+            <select class="place-row">
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label for="input-routine">Routine</label>
+            <input type="text" class="form-control" id="input-routine" name="routine" placeholder="3 days">
+        </div>
+        <div class="form-group">
+            <label for="input-imagepath">Image path</label>
+            <input type="text" class="form-control" id="input-imagepath" name="imagepath" >
+        </div>
+        <div class="form-group">
+            <label for="input-genre">Genre</label>
+            <select class="select-genre">
+                <option>History</option>
+                <option>Physique</option>
+                <option>Social</option>
+                <option>Chemistry</option>
+            </select>
+        </div>
+        
+        <div class="add">
+                <button class="button-add"><i class="fa fa-plus-circle"></i> Add book</button>
+        </div>
+
+    </form>
+   
+    <script>
+       
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+        link.addEventListener('click', function() {
+
+          links.forEach(link => link.classList.remove('active'));
+          this.classList.add('active');
+          });
+      });
+    </script>
+    </div>
+</body>
+</html>

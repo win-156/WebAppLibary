@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/AdminViewClient.css">
+    <title>Admin view client</title>
+
+</head>
+
+<body>
+    <div id="main">
+        <form class="form-search">
+            <div class="select-type">
+                <select id="type">
+                    <option value="A->Z">A->Z</option>
+                    <option value="Z->A">Z->A</option>
+                </select>
+            </div>
+            <input type="text" placeholder="Search by name" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="add-client">
+            <a href=""> New client</a>
+        </div>
+        <div class="table-heading">
+            <div class="table-data">Client ID</div>
+            <div class="table-data">First Name</div>
+            <div class="table-data">Last Name</div>
+            <div class="table-data">Phone </div>
+            <div class="table-data">Email</div>
+            <div class="table-data">Gender</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+        <div class="table-row">
+            <div class="table-data"><a href="">T0001</a></div>
+            <div class="table-data">Nguyen Quoc</div>
+            <div class="table-data">Phat</div>
+            <div class="table-data">00032163716</div>
+            <div class="table-data">ngh@gmail.com</div>
+            <div class="table-data">Male</div>
+        </div>
+    </div>
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+                links.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

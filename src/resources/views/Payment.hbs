@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/Payment.css">
+<title>Payment</title>
+
+</head>
+
+<body>
+    <div id="main">
+
+        <div class="list-pay">
+            <div class="book-to-pay">
+                <img src="/images/invisible-man.jpg">
+                <div class="book-pay">
+                    <div class="book-detail">
+                        <div class="book-information">Title: <span>Obama</span></div>
+                        <div class="book-information">BookID: <span>T38198</span></div>
+                        <div class="book-information">Price: <span>2000 VND</span></div>
+                        <div class="book-information">Routine: <span>8 days</span></div>
+                        <div class="button">
+                            <button class="button-cancel"><i class="fa fa-remove"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-to-pay">
+                <img src="/images/invisible-man.jpg">
+                <div class="book-pay">
+                    <div class="book-detail">
+                        <div class="book-information">Title: <span>Obama</span></div>
+                        <div class="book-information">BookID: <span>T38198</span></div>
+                        <div class="book-information">Price: <span>2000 VND</span></div>
+                        <div class="book-information">Routine: <span>8 days</span></div>
+                        <div class="button">
+                            <button class="button-cancel"><i class="fa fa-remove"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-to-pay">
+                <img src="/images/invisible-man.jpg">
+                <div class="book-pay">
+                    <div class="book-detail">
+                        <div class="book-information">Title: <span>Obama</span></div>
+                        <div class="book-information">BookID: <span>T38198</span></div>
+                        <div class="book-information">Price: <span>2000 VND</span></div>
+                        <div class="book-information">Routine: <span>8 days</span></div>
+                        <div class="button">
+                            <button class="button-cancel"><i class="fa fa-remove"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-to-pay">
+                <img src="/images/invisible-man.jpg">
+                <div class="book-pay">
+                    <div class="book-detail">
+                        <div class="book-information">Title: <span>Obama</span></div>
+                        <div class="book-information">BookID: <span>T38198</span></div>
+                        <div class="book-information">Price: <span>2000 VND</span></div>
+                        <div class="book-information">Routine: <span>8 days</span></div>
+                        <div class="button">
+                            <button class="button-cancel"><i class="fa fa-remove"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-to-pay">
+                <img src="/images/invisible-man.jpg">
+                <div class="book-pay">
+                    <div class="book-detail">
+                        <div class="book-information">Title: <span>Obama</span></div>
+                        <div class="book-information">BookID: <span>T38198</span></div>
+                        <div class="book-information">Price: <span>2000 VND</span></div>
+                        <div class="book-information">Routine: <span>8 days</span></div>
+                        <div class="button">
+                            <button class="button-cancel"><i class="fa fa-remove"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-pay">
+
+                <button class="button-payment"><i class="fa fa-credit-card"></i>Payment</button>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <script>
+
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+
+                links.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
